@@ -1,0 +1,604 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+body {
+    color:black;
+
+}
+#HomeHeader {
+    width: 100%;
+    display: flex;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+
+}
+.headerInnerContainer {
+    width: 80%;
+    display: flex;
+    margin-top: 90px;
+    justify-content: space-evenly;
+
+}
+
+
+.logo{
+    width: 20%;
+    display: flex;
+    align-items: center;
+
+}
+.logo img {
+    width: 50px;
+    border-radius: 100px;
+
+}
+.logo strong {
+    font-size: 1.20em;
+    padding-left: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+
+.links {
+    width: 80%;
+    display: flex;
+    align-items: center;
+
+}
+.links ul {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    font-size: 1.10em;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.links ul li a {
+    display: flex;
+    color: black;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.links ul li a svg {
+    width: 24px;
+
+}
+.links ul li a strong {
+    margin-left: 10px;
+
+}
+
+.links ul li {
+    display: flex;
+    color: black;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.links ul li svg {
+    width: 24px;
+    cursor: pointer;
+
+}
+.links ul li  strong {
+    margin-left: 10px;
+
+}
+
+#PhoneUilinks {
+    display: none;
+}
+@media (max-width: 943px) {
+    .links {
+        display: none;
+        
+    }
+    #PhoneUilinks {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+    .menu  {
+        display: flex;
+        align-items: center;
+        width: fit-content;
+    }
+    .menu strong {
+        font-size: 1.30em;
+        padding-right: 10px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .menu svg {
+        width: 25px;
+        cursor: pointer;
+    }
+    .logo strong {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+}
+#cartbar {
+    top: 0;
+    right: 0;
+    width: 28%;
+    height: 100%;
+    display: none;
+    position: fixed;
+    animation-name: cartbar;
+    animation-duration: 0.50s;
+    animation-iteration-count: calc(1);
+    background-color: rgb(213, 213, 213);
+}
+.headercart {
+    width: 100%;
+    display: flex;
+    height: 100px;
+    color: white;
+    align-items: center;
+    background-color: black;
+    animation-name: smoothaftersee;
+    animation-duration: 2s;
+    animation-iteration-count: calc(1);
+    justify-content: space-evenly;
+}
+.closecart {
+    width: 10%;
+    padding: 20px;
+    font-size: 2em;
+}
+.closecart strong {
+    cursor: pointer;
+
+}
+.nameTitle {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+
+}
+.nameTitle strong {
+    font-size: 1.50em;
+    margin-right: 80px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+@keyframes cartbar {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 28%;
+    }
+}
+@keyframes smoothaftersee {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+#homepage {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: fit-content;
+    
+}
+.innercontainerhomepage {
+    width: 100%;
+    height: fit-content;
+
+}
+.innercontainerhomepage img {
+    margin: 5px;
+    width: 340px;
+    height: 340px;
+    cursor: pointer;
+    transition-duration: 0.50s;
+
+}
+.innercontainerhomepage img:hover {
+    transition-duration: 0.50s;
+    border-radius: 5%;
+}
+.rowhome  {
+    width: 100%;
+    height: 400px;
+    overflow-y: scroll;
+    display: flex;
+    justify-content: center;
+
+}
+
+#Newcoursecontainer {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: green; */
+}
+.headingforcoursenamecontainer {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+
+}
+.elelmentsin {
+    width: 80%;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+.elelmentsin strong {
+    margin: 20px;
+    font-size: 1.20em;
+
+}
+.ah1 {
+    font-size: 50px;
+    font-weight: 100;
+    margin: 20px;
+    font-family: sans-serif;
+}
+.bh1 {
+    font-weight: 100;
+    margin: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+#inrollnow {
+    border: none;
+    width: 200px;
+    height: 40px;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 20px;
+    background-color: black;
+
+}
+
+.imageforcourserheadingrealeted {
+    width: 50%;
+    height: fit-content;
+
+}
+.imagein {
+    width: 100%;
+    height: 500px;
+    transition-duration: 0.50s;
+    filter: blur(1px);
+    border-radius: 8px;
+    background-image: url(download-16.webp);
+}
+.imagein:hover {
+    transition-duration: 0.50s;
+    filter: blur(0);
+  
+
+}
+@media (max-width: 1064px) {
+    #Newcoursecontainer {
+       flex-direction: column;
+       justify-content: start;
+       height: fit-content;
+
+    }
+    .headingforcoursenamecontainer {
+        width: 100%;
+        margin: 30px;
+
+    }
+    .elelmentsin strong {
+    
+        margin-left: 0;
+    
+    }
+    .ah1, .bh1, #inrollnow {
+        margin-left: 0;
+    }
+
+    .imageforcourserheadingrealeted {
+        width: 90%;
+
+    }
+}
+
+
+#achievementsContiner {
+    width: 100%;
+    margin-top: 100px;
+    height: fit-content;
+
+}
+.headingtilteachievement {
+    width: 100%;
+    text-align: center;
+
+}
+.headingtilteachievement strong {
+    font-size: 2.10em;
+    font-family: sans-serif;
+}
+.containerelelementshow {
+    width: 100%;
+    display: flex;
+    margin-top: 60px;
+    align-items: center;
+    height: fit-content;
+    justify-content: center;
+
+}
+.PC_DI_CG {
+    width: 150vh;
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    height: fit-content;
+    justify-content: space-evenly;
+}
+.projectsCompleted {
+    width: 250px;
+    height: 260px;
+    margin-top: 15px;
+    border-radius: 4px;
+    border: 2px solid black;
+}
+.digitalProducts {
+    width: 250px;
+    height: 260px;
+    margin-top: 15px;
+    border-radius: 4px;
+    border: 2px solid black;
+
+}
+.CostomersGlobally {
+    width: 250px;
+    height: 260px;
+    margin-top: 15px;
+    border-radius: 4px;
+    border: 2px solid black;
+
+}
+.projectsCompleted p{
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 30px;
+}
+.digitalProducts p{
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 30px;
+}
+.CostomersGlobally p{
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 30px;
+}
+.ah2 {
+    font-size: 1.20em;
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#productsConatiner {
+    width: 100%;
+    margin-top: 100px;
+    height: fit-content;
+}
+.headingproducts {
+    width: 100%;
+    text-align: center;
+    font-size: 2.10em;
+    font-family: sans-serif;
+}
+.productshowingpage {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.productOne {
+    width: 400px;
+    height: 380px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+.productImage {
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+    transition-duration: 0.20s;
+    background-image: url(Images\ factory/download-14.webp);
+}
+.productImage:hover {
+    border-radius: 0px;
+    background-position-x: right;
+
+}
+.downloadImage {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    margin-top: 10px;
+    margin-right: 20px;
+    float: right;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    background-color: aliceblue;
+  
+}
+.downloadImage strong {
+    width: 25px;
+    height: 25px;
+}
+
+.productNameTilele{
+    width: 100%;
+    height: 100px;
+
+}
+#HeadingNameForProduct {
+    margin-top: 6%;
+    margin-left: 2%;
+    font-size: 1.20em;
+    font-family: sans-serif;
+}
+#PriceForProduct {
+    margin-top: 3%;
+    margin-left: 2%;
+    font-size: 1.20em;
+    font-family: sans-serif;
+}
+
+#OfferProduct {
+    text-decoration: line-through;
+}
+.productByButton {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.productByButton button {
+    width: 100%;
+    height: 50px;
+    color: white;
+    font-size: 1.10em;
+    border: none;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+@media (max-width: 500px) {
+    .productOne {
+        margin-left: 0;
+    }
+}
+#DesignerAbout {
+    width: 100%;
+    display: flex;
+    height: fit-content;
+}
+.DesignerImageContainer {
+    width: 50%;
+    height: fit-content;
+}
+.desiginerImageAdd {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-image: url(https://media.licdn.com/dms/image/D5603AQErZxrHW1RMjw/profile-displayphoto-shrink_800_800/0/1680706019041?e=2147483647&v=beta&t=xBTJ0VYMAew5aKZ7vq0XgKGvMhSkVQjjXey5Co__ros);
+}
+
+.someTextForDesignerContainer {
+    width: 50%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.desiginerAbouttext {
+    width: 100%;
+    
+}
+.desiginerAbouttext h1 {
+    font-size: 2.20em;
+    margin-left: 10%;
+    font-weight: lighter;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.desiginerAbouttext strong {
+    margin-left: 10%;
+    font-size: 1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.desiginerAbouttext p {
+    font-size: 1em;
+    line-height: 30px;
+    margin-left: 10%;
+    color: rgb(58, 58, 58);
+    font-family: sans-serif;
+}
+.followerShow {
+    width: 100%;
+    display: flex;
+    height: fit-content;
+    justify-content: space-evenly;
+}
+
+
+.rowInstragramYoutube {
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.ininsta {
+    display: flex;
+    margin: 15px;
+    flex-direction: column;
+}
+.ininsta h2 {
+    font-size: 2em;
+}
+.inyout {
+    display: flex;
+    margin: 15px;
+    flex-direction: column;
+}
+.inyout h2 {
+    font-size: 2em;
+}
+.rowUploadedViews {
+    margin: 15px;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.inuploade {
+    display: flex;
+    margin: 15px;
+    flex-direction: column;
+}
+.inuploade h2 {
+    font-size: 2em;
+}
+.inviews {
+    display: flex;
+    margin: 15px;
+    flex-direction: column;
+}
+.inviews h2 {
+    font-size: 2em;
+}
