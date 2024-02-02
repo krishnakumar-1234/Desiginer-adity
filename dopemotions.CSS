@@ -112,7 +112,7 @@ body {
     }
     .menu  {
         display: flex;
-        align-items: center;
+        align-items: end;
         width: fit-content;
     }
     .menu strong {
